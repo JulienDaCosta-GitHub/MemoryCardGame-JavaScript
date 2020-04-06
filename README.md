@@ -1,2 +1,2 @@
-# Renforcement-JS
-Exercice de renforcement JS
+# Renforcement-JavaScript
+Exercice de renforcement JavaScript
