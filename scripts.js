@@ -6,7 +6,7 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
-// Ajout de la classe flip a la carte séléctionnée pour retourner
+// Ajout de la classe flip a la carte séléctionnée pour la retourner + savoir si on est sur le premier ou le deuxième click
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
