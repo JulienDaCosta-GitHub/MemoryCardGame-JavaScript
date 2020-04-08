@@ -34,7 +34,7 @@ function checkForMatch() {
     isMatch ? disableCards() : unflipCards();
 }
 
-// Pour empécher de re-cliquer sur les cartes (si il y a un match)
+// Si il y a un match, pour empécher de re-cliquer sur les cartes
 function disableCards() {
     flipCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
@@ -42,7 +42,7 @@ function disableCards() {
     resetBoard();
 }
 
-// Si il n'y a pas de match, cette fonction est appelée pour bloquer les cartes pendant 1.5 secondes, puis les retourner
+// Si il n'y a pas de match, cette fonction est appelée pour bloquer les cartes pendant 1.5 secondes, et les retourner en enlevant flip
 function unflipCards() {
     lockBoard = true;
 
