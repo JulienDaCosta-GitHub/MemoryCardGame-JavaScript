@@ -42,7 +42,7 @@ function disableCards() {
     resetBoard();
 }
 
-// Si il n'y a pas de match, cette fonction est appelée pour bloquer les cartes pendant 1.5 secondes, et les retourner en enlevant flip
+// Si il pas de match, cette fonction est appelée pour bloquer les cartes pendant 1.5s, et les retourner en enlevant la class flip
 function unflipCards() {
     lockBoard = true;
 
