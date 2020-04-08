@@ -6,7 +6,7 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
-// Ajout de la classe flip a la carte séléctionnée
+// Ajout de la classe flip a la carte séléctionnée pour retourner
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
@@ -27,14 +27,14 @@ function flipCard() {
         checkForMatch();
 }
 
-// Si il y a une correspondance entre les deux cartes elles sont bloquées, sinon on les retourne
+// Si il y a une correspondance entre les deux cartes on peut plus cliquer dessus, sinon on les retourne
 function checkForMatch() {
     let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
     isMatch ? disableCards() : unflipCards();
 }
 
-// Pour bloquer les cartes = Empécher de re-cliquer dessus
+// Pour empécher de re-cliquer sur les cartes (si il y a un match)
 function disableCards() {
     flipCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
