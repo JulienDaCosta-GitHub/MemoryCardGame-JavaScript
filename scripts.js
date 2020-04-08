@@ -27,7 +27,7 @@ function flipCard() {
         checkForMatch();
 }
 
-// Si il y a une correspondance entre les deux cartes on peut plus cliquer dessus, sinon on les retourne
+// Si il y a une correspondance entre les deux cartes, on ne peut plus cliquer dessus, sinon on les retourne
 function checkForMatch() {
     let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
