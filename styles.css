@@ -73,6 +73,7 @@
     font-family: 'Fredoka One', cursive;
     transition: all 0.5s ease;
     margin-top: 30px;
+    font-size: 18px;
   }
 
   a:hover {
