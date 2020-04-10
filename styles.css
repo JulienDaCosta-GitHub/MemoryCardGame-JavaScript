@@ -53,3 +53,50 @@
   .front-face {
     transform: rotateY(180deg);
   }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .enter {
+    width: 100%;
+    text-align: center;
+
+  }
+
+  a {
+    border-radius: 20px;
+    font-family: 'Fredoka One', cursive;
+    transition: all 0.5s ease;
+    margin-top: 30px;
+  }
+
+  a:hover {
+    background-color: red !important;
+    color: white !important;
+  }
+
+  h1 {
+    width: 100%;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  span {
+    opacity: 0;
+    transition: all 0.4s ease;
+    font-family: 'Fredoka One', cursive;
+    transform: translateY(50px);
+    display: inline-block;
+  }
+
+  span.fade {
+    opacity: 1;
+    transform: translateY(0px);
+  }
