@@ -83,7 +83,6 @@
   h1 {
     width: 100%;
     color: white;
-    font-size: 3rem;
     text-align: center;
     margin: auto;
   }
@@ -94,6 +93,7 @@
     font-family: 'Fredoka One', cursive;
     transform: translateY(50px);
     display: inline-block;
+    font-size: 3rem;
   }
 
   span.fade {
